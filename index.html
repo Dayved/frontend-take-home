@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+  <title>Front End Take Home</title>
+</head>
+
+<body>
+    <p>Please fill in the following information </p>
+    <form>
+        <label for="fname">Fullname:</label><br>
+        <input type="text" id="fname" name = "fname"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name = "email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name = "password"><br>
+        <label for="occupation">Occupation:</label><br>
+        <select name="occupation" id="occupation">
+            <option value="empty">Select a State</option>
+        </select>
+    </form>
+    <script>
+        document.getElementById('occupation').addEventListener("click", function () {
+            httpGet("https://frontend-take-home.fetchrewards.com/form");
+        });
+
+        function httpGet(theUrl){
+            var xmlHttp = new XMLHttpRequest();
+            console.log("here");
+            xmlHttp.open( "GET", theUrl, false); // false for synchronous request
+            xmlHttp.setRequestHeader("Content-Type", "application/json");
+            console.log("here too");
+            xmlHttp.onreadystatechange = function () {
+                if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                    console.log("here three");
+                    var json = JSON.parse(xmlHttp.responseText);
+                    console.log(JSON.stringify(json, " ", 2));
+                    //for (let key of Object.keys(json)){
+                      //  console.log(key);
+                       // var row = displayTable.insertRow(-1);
+                      //  var cell = row.insertCell(0);
+                       // cell.innerHTML = key;
+                    //}
+                }
+            };
+            xmlHttp.send();
+        }
+    </script>
+</body>
+
+</html>
