@@ -4,27 +4,34 @@
 <head>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
-  <script src="getOcc&St.js" defer></script>
+  <script src="getOcc&St.js"></script>
+  <script src="submission.js" defer></script>
   <title>Front End Take Home</title>
 </head>
 
 <body>
     <p>Please fill in the following information </p>
     <form>
-        <label for="fname">Fullname:</label><br>
-        <input type="text" id="fname" name = "fname"><br><br>
+        <label for="fname">Full name:</label><br>
+        <input type="text" id="fname" name = "fname">
+        <br><br>
         <label for="email">Email:</label><br>
-        <input type="text" id="email" name = "email"><br><br>
+        <input type="text" id="email" name = "email">
+        <br><br>
         <label for="password">Password:</label><br>
-        <input type="password" id="password" name = "password"><br><br>
+        <input type="password" id="password" name = "password">
+        <br><br>
         <label for="occupation">Occupation:</label><br>
         <select name="occupation" id="occupation">
             <option value="empty">Select an occupation</option>
-        </select> <br> <br>
+        </select> 
+        <br><br>
         <label for="occupation">State:</label><br>
         <select name="state" id="state">
             <option value="empty">Select a state</option>
         </select>
+        <br><br>
+        <button id="submit">Submit</button>
     </form>
 </body>
 
