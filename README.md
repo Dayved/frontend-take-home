@@ -1,2 +1,2 @@
 # frontend-take-home
-This is a repo for a front end take home skill evaluation from Fetch
+This is a repo for a front end take home skill evaluation from Fetchrewards. The text fields all check to make sure they aren't empty and the drop down menus check to make sure something other than the first choice is picked. If anything is left empty and alert shows up informing the user of empty fields. When all fields are appropriately filled a different alert pops up informing the user the form has been submitted.
