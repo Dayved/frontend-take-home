@@ -1,0 +1,13 @@
+.form{
+    padding-left: 250px;
+    padding-top: 80px;
+}
+.header-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(252, 121, 21);
+    color: rgb(129, 79, 13);
+}
+

@@ -6,13 +6,17 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
   <script src="getOcc&St.js"></script>
-  <script src="submission.js" defer></script>
+  <script src="submission.js"></script>
+  <link rel="stylesheet" href="stylesheet.css">
+
   <title>Front End Take Home</title>
+  <img src="pictures/fetchLogo.png" width="15%">
 </head>
 
 <body>
-    <p>Please fill in the following information </p>
-    <form>
+    <img src="pictures/workspace.jpg" alt="Picture" style="float:right; padding-right: 200px; padding-top: 170px;" height = "350" >
+    <form class = "form">
+        <p>Please fill in the following information </p>
         <label for="fname">Full name:</label><br>
         <input type="text" id="fname" name = "fname">
         <br><br>
@@ -35,5 +39,9 @@
         <button id="submit">Submit</button>
     </form>
 </body>
+
+<div class="header-card">
+    <h1></h1>
+</div>
 
 </html>
